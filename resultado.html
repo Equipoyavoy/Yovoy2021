@@ -4,29 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Grupo de estudio Tecnicatura en programacion 2do Año ITSC">
+    <meta name="description" content="Pagina web dedicada a facilitar los viajes de turistas y viajantes. Te permite encontrar en un mismo lugar hospedaje, compartir un vehiculo para viajar o simplemente obtener informacion turistica de un lugar. Una Web que te hará dar la vuelta al mundo">
+    <meta name="keywords" content="viajes, turismo, aventura, hospedaje, viajecompartido, carpooling, turismo, córdoba, argentina">
+    <link rel="icon" href="img/logo_bisel.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo Voy!</title>
+    <link rel="stylesheet" href="normalize.css">
     <!-- link fuentes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
     <!-- link para iconos -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- link de boostrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="normalize.css">
 </head>
 
 <body class="centrar">
-    <div class="contenedor">
-        <nav class="navbar navbar-expand-md navbar-dark">
+
+    <div class="contenedorRes">
+
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #6B3C54;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="Index.html">
-                    <img src="img/logo_ya-voy.jpeg" alt="" width="60" height="60"
-                        class="d-inline-block align-text-center" alt="Logo">
+                    <img src="img/logo_ya-voy.jpeg" alt="" width="60" height="60" class="d-inline-block align-text-center" alt="Logo"> &nbsp YaVoy
                 </a>
 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
@@ -47,19 +50,330 @@
                     </ul>
                 </div>
 
-
             </div>
         </nav>
-        <header class="centrar">
-            <p>Cuerpo de la pagina web pagina resultado</p>
-        </header>
+        <div class="buscadorRes">
+            <form action="">
+
+                <div class="buscador-form__titulo">
+                    <i class='bx bxs-car'></i>
+                    <h4>Origen</h4>
+                </div>
+                <select placeholder="Provincia" name="Provincia" id="">
+                    <option value=""></option>
+                    <option value="">Córdoba</option>
+                    <option value="">Buenos Aires</option>
+                    <option value="">Salta</option>
+                    <option value="">Rio Negro</option>
+                </select>
+
+                <div class="buscador-form__titulo">
+                    <i class='bx bxs-car-garage'></i>
+                    <h4>Destino</h4>
+                </div>
+                <select placeholder="Provincia" name="Provincia" id="">
+                    <option value=""></option>
+                    <option value="">Córdoba</option>
+                    <option value="">Buenos Aires</option>
+                    <option value="">Salta</option>
+                    <option value="">Rio Negro</option>
+                </select>
+
+                <div class="buscador-form__titulo">
+                    <i class='bx bx-calendar'></i>
+                    <h4>Salida</h4>
+                </div>
+                <input type="date" name="salida" id="">
+
+                <div class="buscador-form__titulo">
+                    <i class='bx bxs-plus-square'></i>
+                    <h4>Estadia</h4>
+                </div>
+
+                <input type="number" name="" id="" min="1">
+
+                <div class="buscador-form__titulo"><i class='bx bxs-group'></i>
+                    <h4>Adultos</h4>
+                </div>
+                <input type="number" name="" id="" min="1">
+
+                <div class="buscador-form__titulo"><i class='bx bxs-baby-carriage'></i>
+                    <h4>Menores</h4>
+                </div>
+                <input type="number" name="" id="" min="0">
+
+            </form>
+            <div class="boton centrar" role="link" onclick="c:/Users/diego/source/repos/Yavoy/resultadoBus.html">
+                <a href="#">Buscar</a>
+            </div>
+        </div>
+        <!--Contenedor de los resultados de la Busqueda -->
+        <div class="contenedorBarra">
+
+            <h1> Resultado de la busqueda </h1>
+
+            <div class="card mb-3" style="width: 100%;">
+                <!-- Resultado 2-->
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/portada2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Raimon</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y llevamos <br> a cualquier punto de Córdoba Capital. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+            <div class="card mb-3" style="width: 100%;">
+                <!-- Resultado 2 -->
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/card-1.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Tour Cordobés</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y te llevamos a conocer los rios de Córdoba. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="card mb-3" style="width: 100%;">
+                <!-- Resultado 3-->
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/portada2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Raimon</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y llevamos a cualquier punto de Córdoba Capital. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/portada2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Raimon</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y llevamos a cualquier punto de Córdoba Capital. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/portada2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Raimon</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y llevamos a cualquier punto de Córdoba Capital. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="img/portada2.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Viajes Raimon</h5>
+                            <p class="card-text">Te buscamos desde la Terminal y llevamos a cualquier punto de Córdoba Capital. Salidas diarias!!
+                            </p>
+                            <p class="card-text"><small class="text-muted">Actualizado hace 3 min</small></p>
+                            <button type="button" class="boton">Más Info</button>
+                            <button type="button" class="boton a">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+        <!-- Fin Contenedor Busqueda -->
+        <br>
+        <!-- ----------------seccion bancos y descuentos---------------- -->
+        <table class="Tablapadre" width="100%" border="0" cellpadding="2">
+            <tr>
+                <td class="table-primary">
+                    <div class="Texto1">
+                        <h5 class="card-title" style="text-align: center;">¡Cuotas con <br> muchos bancos!</h5>
+                    </div>
+                </td>
+                <td class="table-primary">
+                    <img src="img/Pago.png" class="rounded float-start" alt="..." width="144" height="86">
+                </td>
+                <td class="table-primary">
+                    <img src="img/Pago.png" class="rounded float-start" alt="..." width="144" height="86">
+                </td>
+
+                <td class="table-primary">
+                    <div class="Tabla2">
+
+                        <button style="background-color: #6B3C54;" type="button" class="btn btn-dark regular-button">Ver condiciones</button>
+                    </div>
+
+                </td>
+        </table>
+        <section>
+            <h1 class="cards-titulos">Los destinos más visitados</h1>
+            <!-- ----------------seccion cards---------------- -->
+            <div class="cards">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-1.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Córdoba</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3>$3000</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-2.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Mar del plata</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3>$3000</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="img/card-3.jpg" alt="">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Salta</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="card-importe">
+                        <h3>$3000</h3>
+                    </div>
+
+                </div>
+            </div>
+            <h2 class="cards-titulos">Info útil</h2>
+            <!-- ----------------seccion card tipo 2---------------- -->
+
+            <div class="cards">
+                <div class="card-2">
+                    <div class="card-img">
+                        <img src="img/carpooling.jpg" alt="auto y destino">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Carpooling?</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet co adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="card-img">
+                        <img src="img/verano-viaje.jpg" alt="imagen de mapa y auto">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Verano 2022</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet consec adipisicing elit. Sit, molestias?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <div class="card-img">
+                        <img src="img/viajar-barato.jpg" alt="imagen de mapa y alcancia ">
+                    </div>
+                    <div class="card-detalle">
+                        <div class="card-titulo">
+                            <h2>Viajar barato!</h2>
+                        </div>
+                        <div class="card-detalle">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipSit, molestias?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+-->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        -->
 </body>
 
 </html>
