@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="centrar">
+<body class="centrar ">
     <div class="contenedor">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
@@ -51,11 +51,12 @@
 
             </div>
         </nav>
+        <br>
         <header class="centrar">
             <!-- <div class="container-yv">
                 <div class="card"> -->
                     <form id="signup-form">
-                        <h2 class="card-title">
+                        <h2 class="card-title shadow-lg p-1 mb-3 bg-body rounded">
                             <section id="home">
                                 <div class="home container-yv" id="login">
                                     <!-- <div class="container p-4">
@@ -68,38 +69,42 @@
                                     </div> -->
 
                                     <div class="container-yv">
-                                        <div class="card">
+                                        <div class="card border border-4">
                                             <form id="signup-form">
-                                                <h2 class="card-title">Ingresas tus datos personales</h2>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Primer Nombre" class="form-control"
-                                                        placeholder="Primer Nombre" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Segundo Nombre" class="form-control"
-                                                        placeholder="Segundo Nombre" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Apellido" class="form-control"
-                                                        placeholder="Apellido" required>
-                                                </div>
+                                                <h2 class="card-title d-flex justify-content-center">Ingresa tus datos personales</h2>
+                                                
+                                                
+                                                    <!--<h3 class="card-title d-flex justify-content-center">Datos de contacto</h3>-->
 
-                                                <div class="form-group">
-                                                    <label for="Dia">Fecha de nacimiento</label>
-                                                    <input type="date" name="salida" id="">
-                                                </div>
+                                                <!----------------------------Aca empieza otro formato de formulario---------------------------------------->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Nombres</span>
+                                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;" placeholder="Primero">
+                                                    <input type="text" aria-label="Last name" class="form-control" style="height: auto;" placeholder="Segundo">
+                                                  </div>
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Apellidos</span>
+                                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;">
+                                                  </div>
 
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Fecha de nacimiento</span>
+                                                    <input type="date" name="salida" aria-label="First name" class="form-control" style="height: auto;">
+                                                  </div>
 
-                                                <div class="form-group">
-                                                    <label for="Sexo">Sexo</label>
-                                                    <select name="Sexo" id="sexo">
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Sexo</span>
+                                                    <select name="Sexo" id="sexo" style="height:auto;" class="form-select form-select-sm">
+                                                        <option value="Sexo"></option>
                                                         <option value="Sexo">Masculino</option>
                                                         <option value="Sexo">Femenino</option>
                                                     </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Nacionalidad">Nacionalidad</label>
-                                                    <select name="Nacionalidad" id="nacionalidad">
+                                                  </div>
+                                        
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Nacionalidad</span>
+                                                    <select name="Nacionalidad" id="nacionalidad" style="height:auto;" class="form-select form-select-sm">
+                                                        <option value="Nacionalidad"></option>
                                                         <option value="Nacionalidad">Argentina</option>
                                                         <option value="Nacionalidad">Brasil</option>
                                                         <option value="Nacionalidad">Uruguay</option>
@@ -111,36 +116,54 @@
                                                         <option value="Nacionalidad">Panama</option>
                                                         <option value="Nacionalidad">Usa</option>
                                                     </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-documento" class="form-control"
-                                                        placeholder="DNI" required>
-                                                </div>
+                                                  </div>
 
 
-                                                <h3 class="card-title">Datos de contacto</h3>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Documento</span>
+                                                    <input type="text" aria-label="Documento" required placeholder="Numero de documento" class="form-control" style="height: auto;">
+                                                </div>
 
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-email" class="form-control"
-                                                        placeholder="Email" required>
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Correo</span>
+                                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-confirmacion de email"
-                                                        class="form-control" placeholder="Confirmacion de email"
-                                                        required>
+                                                
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Confirmar correo</span>
+                                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-telcodarea" class="form-control"
-                                                        placeholder="Tel. Codigo área" required>
+                                                  
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Cod.</span>
+                                                    <input type="text" aria-label="Codigo" class="form-control" required placeholder="Codigo de Area" style="height: auto;">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-telnumero" class="form-control"
-                                                        placeholder="Tel número" required>
+
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">Tel.</span>
+                                                    <input type="text" aria-label="Tel" class="form-control" required placeholder="Numero de Telefono" style="height: auto;">
                                                 </div>
+                                                
+                                                
+                                                
+                                                
+                                                <div class="d-grid mb-3 gap-2 d-md-flex justify-content-md-end mx-auto">
+                                                    <button class="btn btn-dark me-md-2" style="background-color: #6B3C54; width: 100px;" type="button">Aceptar</button>
+                                                    <button class="btn btn-dark" style="background-color: #6B3C54; width: 100px;" type="button">Cancelar</button>
+                                                  </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </h2>
+                    </form>
+                    
+
         </header>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
