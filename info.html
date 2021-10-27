@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title >YO VOY-Reserva</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Grupo de estudio Tecnicatura en programacion 2do Año ITSC">
+    <meta name="description" content="Pagina web dedicada a facilitar los viajes de turistas y viajantes. Te permite encontrar en un mismo lugar hospedaje, compartir un vehiculo para viajar o simplemente obtener informacion turistica de un lugar. Una Web que te hará dar la vuelta al mundo">
+    <meta name="keywords" content="viajes, turismo, aventura, hospedaje, viajecompartido, carpooling, turismo, córdoba, argentina">
+    <link rel="icon" href="img/logo_bisel.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link para iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+    <div >
+        <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm ">
+            <div class="container px-2 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                    <a class="navbar-brand " href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class=" imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo">
+                    </a>
+                    <strong class="text-white"> &nbsp YO VOY </strong>
+                </div>
+
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    
+                </button>
+                
+                <div id="navbarResponsive" class="collapse navbar-collapse col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <ul class="navbar-nav   col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <li class="nav-item ">
+                                <a class="nav-link " style="color: white; " href="#"><strong>Carpooling!</strong></a>
+                            </li>
+                            
+                            <!-- boton iniciar sesion-->
+                            
+                            <button class="estiloboton btn btn-secondary rounded-pill px-3 mb-2 mb-lg-0 mr-3" data-bs-toggle="modal" data-bs-target="#login">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Iniciar Sesión</span>
+                                </span>
+                            </button>
+                            &nbsp
+                            <li >
+                                <a class="estiloboton btn btn-secondary  px-3 rounded-pill small"  href="inscripcion.html" >Registrarse</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        <div class="hospedaje">
+                <!-- Nombre del establecimiento y calificación-->
+            <div>
+                <h1 class="nombre">Hotel Transylvania</h1>
+                <h1 class="nombre">•</h1>
+                <div class="destino">
+                    <img src="img/Icono-Ubicacion.png">
+                    <h2 class="nombre">Villa Carloz Paz</h2>
+                </div>
+                <div class="estrella">
+                    <img src="img/img_estrella.png">
+                    <img src="img/img_estrella.png">
+                    <img src="img/img_estrella.png">
+                    <img src="img/img_estrella.png">
+                    <img src="img/img_estrella.png">
+                </div>
+            </div>
+    
+            <!-- Sección "INCLUYE" -->
+            <div>
+                <div class="label">
+                    <h1>INCLUYE</h1>
+                </div>
+                <div class="bien">
+                    <img src="img/WiFi-Icono.png">
+                    <h2 class="nombre"><b>WIFI GRATUITO</b></h2>
+                </div>
+                <div class="bien">
+                    <img src="img/Animal-Icono.png">
+                    <h2 class="nombre"><b>ACEPTA MASCOTAS</b></h2>
+                </div>
+            </div>
+    
+            <!-- Sección "FOTOS DEL LUGAR"-->
+            <div>
+                <div class="label">
+                    <h1>FOTOS DEL LUGAR</h1>
+                </div>
+                <div class="fotos">
+                    <div class="caja item1"><img src="img/grilla/img_item900x410.png"></div>
+                    <div class="caja item2"><img src="img/grilla/img_item300x200.png"></div>
+                    <div class="caja item3"><img src="img/grilla/img_item300x200.png"></div>
+                    <div class="caja item4"><img src="img/grilla/img_item600x200.png"></div>
+                    <div class="caja item5"><img src="img/grilla/img_item600x200.png"></div>
+                </div>
+            </div>
+    
+            <!-- Sección "VIAJE" -->
+            <div>
+                <div class="label">
+                    <h1>VIAJE</h1>
+                </div>
+                <div class="viaje">
+                    <div style="grid-column: 1; grid-row: 1;"><img src="img/img_auto.png"></div>
+                    <div style="grid-column: 2; grid-row: 1;">Salida<br>Llegada</div>
+                    <div style="grid-column: 3; grid-row: 1;">Villa Carloz Paz<br>CÓRDOBA</div>
+                    <div style="grid-column: 4; grid-row: 1;">16:45:30<br>12:40:50</div>
+                    <div style="grid-column: 1; grid-row: 2;"><img src="img/img_auto.png" style="transform: scaleX(-1);"></div>
+                    <div style="grid-column: 2; grid-row: 2;">Test</div>
+                    <div style="grid-column: 3; grid-row: 2;">Test</div>
+                    <div style="grid-column: 4; grid-row: 2;">Test</div>
+                </div>
+            </div>
+    
+            <!-- Sección "DETALLES" -->
+            <div>
+                <div class="label">
+                    <h1>DETALLES</h1>
+                </div>
+                <div class="info">
+                    <h1>Disfruta de una lujosa estadía</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio magnam ipsam quisquam id adipisci nisi debitis consequuntur ea expedita officiis repellat impedit quidem repellendus mollitia, ad totam incidunt dolores? Consequuntur pariatur, ex sint commodi nisi odio molestias quo totam beatae repellendus qui facilis! Nemo sapiente vitae earum molestias odio animi vero, quibusdam eaque illum numquam reprehenderit, rerum autem quo in excepturi optio aliquid voluptatem? Cupiditate necessitatibus distinctio eius sint iste unde laboriosam delectus optio voluptas aspernatur dolorem itaque, sit animi quae dolores recusandae saepe voluptates in numquam quaerat qui, cum vitae consequuntur! Debitis, dolor rerum. Quasi facere voluptas eaque perspiciatis voluptate asperiores nam suscipit animi commodi, quam repellendus quod vitae tenetur atque molestias iure distinctio. Illo, quae. Quisquam eveniet fuga, saepe dignissimos, libero autem magni dolore perferendis architecto ipsum voluptas officiis. Porro eligendi esse aut! Dolore inventore reprehenderit deleniti dolor necessitatibus dolorem enim laboriosam tempore pariatur odio quasi voluptas, deserunt amet vero alias. Porro, facere. Vero, nostrum? Nulla id quas ipsa quibusdam dolore cum dicta incidunt consequuntur porro ea quo ducimus, unde aperiam sapiente obcaecati nam assumenda quis doloribus perferendis voluptas! Eos minus accusamus sit. Accusantium quod ullam debitis doloribus exercitationem. Delectus dolores sint veniam laudantium laboriosam consectetur aut.</p>
+                </div>
+            </div>
+    
+            <!-- Sección "RESERVA" -->
+            <div>
+                <div class="label">
+                    <h1>RESERVA</h1>
+                </div>
+                <div class="reserva">
+                    <div class="grilla">
+                        <div style="grid-column: 1; grid-row: 1;">Total 2 pasajeros</div>
+                        <div style="grid-column: 2; grid-row: 1;">$90.884,00</div>
+                        <div style="grid-column: 1; grid-row: 2;">Impuestos, Tasas</div>
+                        <div style="grid-column: 2; grid-row: 2;">$19.546,00</div>
+                        <div style="grid-column: 1; grid-row: 3;" class="negrita">TOTAL A PAGAR</div>
+                        <div style="grid-column: 2; grid-row: 3; color:red" class="negrita">$110.148,84</div>
+                    </div>
+                    <div class="boton btn-flotante">
+                        RESERVAR
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="footer">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; 2021 Derechos reservados YoVoy.</div>
+                    <a style="color: rgb(184, 37, 11);" href="#!">Privacidad</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 23, 11);" href="#!">Terminos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 31, 11);" href="#!">FAQ</a>
+                    <div class="mb-2"> ---- </div>
+                    <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
