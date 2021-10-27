@@ -1,0 +1,22 @@
+.buscadorRes {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-items: center;
+    padding: 0px ;
+    border-radius: 3rem;
+    color: var(--color_claro);
+    background: url(img/Luces-Blur.jpg);
+   background-size: cover;
+}
+
+@media(max-width:628px){
+    .buscadorRes{grid-template-columns: repeat(2,1fr);}
+  }
+  /*Para celular*/
+  @media(max-width:536px){
+    .grid{grid-template-columns: 1fr;}
+    .Tablapadre{grid-template-columns: 1fr;}
+    .Descuentos{grid-template-columns: 1fr;}
+    .buscador{left: 55px;}
+    .buscadorRes{grid-template-columns: 1fr;}
+  }
