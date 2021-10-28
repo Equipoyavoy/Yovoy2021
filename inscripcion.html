@@ -5,140 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yo Voy!</title>
+    <title>YO VOY</title>
    
 
     <!-- link para iconos -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- link de boostrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="normalize.css">
+
      <!-- link fuentes de letras -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="centrar">
+<body class="centrar ">
     <div class="contenedor">
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="Index.html">
-                    <img src="img/logo_ya-voy.jpeg" alt="" width="60" height="60"
-                        class="d-inline-block align-text-center" alt="Logo">
-                </a>
-
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                    <span class="navbar-toggler-icon"></span>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 ">
+                    <a class="navbar-brand" href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class="d-inline-block align-text-center imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo"><strong> &nbsp YO VOY </strong>
+                    </a>
+                </div>
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
                 </button>
-                <div id="MenuNavegacion" class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight">
-                    <ul class="navbar-nav ">
-                        <ul class="navbar-nav ms-3">
-                            <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="#">Iniciar sesión</a>
+                <div id="navbarResponsive" class="collapse navbar-collapse ">
+                    <ul class="navbar-nav   ms-auto me-4 my-3 my-lg-0 ">
+                        <ul class="navbar-nav  ms-auto me-4 my-3 my-lg-0 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <li class="nav-item ">
+                                <strong  class="nav-link " style="color: white; " >Registro</strong>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Acerca de</a>
+                            <li >
+                                <a class="estiloboton btn btn-secondary  px-4 rounded-pill small"  href="index.html" >Inicio</a>
                             </li>
-                        </ul>
-                        <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
-                        <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
-                        <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                        </ul>     
                     </ul>
                 </div>
-
-
             </div>
         </nav>
+        <br>
         <header class="centrar">
-            <!-- <div class="container-yv">
-                <div class="card"> -->
-                    <form id="signup-form">
-                        <h2 class="card-title">
-                            <section id="home">
-                                <div class="home container-yv" id="login">
-                                    <!-- <div class="container p-4">
-                                        <div class="row">
-                                            <div class="col-md-6 offset-md-3">
-                                                <ul class="list-group posts">
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> -->
+            <form id="signup-form">
+                <div class="DetalleNav">
+        
+                </div>
+                <h2 class="card-title  mb-3 bg-body rounded">
+                    <section>
+                        <div class="card border border-4">
+                            <form id="signup-form">
+                                <h1 class="card-title d-flex justify-content-center text-white">¡Registrate!</h1>
+                                <h2 class="card-title d-flex justify-content-center text-white">Ingresa tus datos personales</h2>
+                                
+                                <!----------------------------Aca empieza otro formato de formulario---------------------------------------->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Nombres</span>
+                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;" placeholder="Primero">
+                                    <input type="text" aria-label="Last name" class="form-control" style="height: auto;" placeholder="Segundo">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Apellidos</span>
+                                    <input type="text" aria-label="First name" class="form-control" style="height: auto;">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Fecha de nacimiento</span>
+                                    <input type="date" name="salida" aria-label="First name" class="form-control" style="height: auto;">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Sexo</span>
+                                    <select name="Sexo" id="sexo" style="height:auto;" class="form-select form-select-sm">
+                                        <option value="Sexo"></option>
+                                        <option value="Sexo">Masculino</option>
+                                        <option value="Sexo">Femenino</option>
+                                    </select>
+                                </div>
+                        
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Nacionalidad</span>
+                                    <select name="Nacionalidad" id="nacionalidad" style="height:auto;" class="form-select form-select-sm">
+                                        <option value="Nacionalidad"></option>
+                                        <option value="Nacionalidad">Argentina</option>
+                                        <option value="Nacionalidad">Brasil</option>
+                                        <option value="Nacionalidad">Uruguay</option>
+                                        <option value="Nacionalidad">Paraguay</option>
+                                        <option value="Nacionalidad">Venezuela</option>
+                                        <option value="Nacionalidad">Bolivia</option>
+                                        <option value="Nacionalidad">chile</option>
+                                        <option value="Nacionalidad">Colombia</option>
+                                        <option value="Nacionalidad">Panama</option>
+                                        <option value="Nacionalidad">Usa</option>
+                                    </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Documento</span>
+                                    <input type="text" aria-label="Documento" required placeholder="Numero de documento" class="form-control" style="height: auto;">
+                                </div>
 
-                                    <div class="container-yv">
-                                        <div class="card">
-                                            <form id="signup-form">
-                                                <h2 class="card-title">Ingresas tus datos personales</h2>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Primer Nombre" class="form-control"
-                                                        placeholder="Primer Nombre" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Segundo Nombre" class="form-control"
-                                                        placeholder="Segundo Nombre" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-Apellido" class="form-control"
-                                                        placeholder="Apellido" required>
-                                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Correo</span>
+                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Confirmar correo</span>
+                                    <input type="text" aria-label="Correo" class="form-control" required placeholder="ejemplo@gmail.com" style="height: auto;">
+                                </div>
+                                  
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Cod.</span>
+                                    <input type="text" aria-label="Codigo" class="form-control" required placeholder="Codigo de Area" style="height: auto;">
+                                </div>
 
-                                                <div class="form-group">
-                                                    <label for="Dia">Fecha de nacimiento</label>
-                                                    <input type="date" name="salida" id="">
-                                                </div>
-
-
-                                                <div class="form-group">
-                                                    <label for="Sexo">Sexo</label>
-                                                    <select name="Sexo" id="sexo">
-                                                        <option value="Sexo">Masculino</option>
-                                                        <option value="Sexo">Femenino</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Nacionalidad">Nacionalidad</label>
-                                                    <select name="Nacionalidad" id="nacionalidad">
-                                                        <option value="Nacionalidad">Argentina</option>
-                                                        <option value="Nacionalidad">Brasil</option>
-                                                        <option value="Nacionalidad">Uruguay</option>
-                                                        <option value="Nacionalidad">Paraguay</option>
-                                                        <option value="Nacionalidad">Venezuela</option>
-                                                        <option value="Nacionalidad">Bolivia</option>
-                                                        <option value="Nacionalidad">chile</option>
-                                                        <option value="Nacionalidad">Colombia</option>
-                                                        <option value="Nacionalidad">Panama</option>
-                                                        <option value="Nacionalidad">Usa</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-documento" class="form-control"
-                                                        placeholder="DNI" required>
-                                                </div>
-
-
-                                                <h3 class="card-title">Datos de contacto</h3>
-
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-email" class="form-control"
-                                                        placeholder="Email" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-confirmacion de email"
-                                                        class="form-control" placeholder="Confirmacion de email"
-                                                        required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-telcodarea" class="form-control"
-                                                        placeholder="Tel. Codigo área" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="text" id="signup-telnumero" class="form-control"
-                                                        placeholder="Tel número" required>
-                                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">Tel.</span>
+                                    <input type="text" aria-label="Tel" class="form-control" required placeholder="Numero de Telefono" style="height: auto;">
+                                </div>
+                                
+                                <div class="d-grid mb-3 gap-2 d-md-flex justify-content-md-end mx-auto">
+                                    <button class="btn btn-secondary rounded-pill me-md-2" type="button">Aceptar</button>
+                                    <button class="btn btn-secondary rounded-pill"  type="button">Cancelar</button>
+                                  </div>
+                            </form>
+                        </div>
+                    </section>
+                </h2>
+            </form>
+            
         </header>
+        <div class="footer">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; 2021 Derechos reservados YoVoy.</div>
+                    <a style="color: rgb(184, 37, 11);" href="#!">Privacidad</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 23, 11);" href="#!">Terminos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 31, 11);" href="#!">FAQ</a>
+                    <div class="mb-2"> ---- </div>
+                    <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
