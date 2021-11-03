@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >YO VOY-Carpooling  </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Grupo de estudio Tecnicatura en programacion 2do Año ITSC">
+    <meta name="description" content="Pagina web dedicada a facilitar los viajes de turistas y viajantes. Te permite encontrar en un mismo lugar hospedaje, compartir un vehiculo para viajar o simplemente obtener informacion turistica de un lugar. Una Web que te hará dar la vuelta al mundo">
+    <meta name="keywords" content="viajes, turismo, aventura, hospedaje, viajecompartido, carpooling, turismo, córdoba, argentina">
+    <link rel="icon" href="img/logo_bisel.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <!-- link fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link para iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm ">
+            <div class="container px-2 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                    <a class="navbar-brand " href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class=" imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo">
+                    </a>
+                    <strong class="text-white"> &nbsp YO VOY </strong>
+                </div>
+    
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    
+                </button>
+                
+                <div id="navbarResponsive" class="collapse navbar-collapse col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <ul class="navbar-nav   col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <!-- boton iniciar sesion-->
+                            
+                            <button class="estiloboton btn btn-secondary rounded-pill px-3 mb-2 mb-lg-0 mr-3" data-bs-toggle="modal" data-bs-target="#login">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Iniciar Sesión</span>
+                                </span>
+                            </button>
+                            &nbsp
+                            <li >
+                                <a class="estiloboton btn btn-secondary  px-3 rounded-pill small"  href="inscripcion.html" >Registrarse</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="">
+            
+            <div class="DetalleNav">
+    
+            </div>
+            <div class="carpoolingIMG">
+                <h1 class="borcar">Carpooling</h1>
+                </br>
+                </br>
+                </br>
+                </br>
+                <h3 style="text-align: center; color: white;">Ver servicios de carpooling</h3>
+                </br>
+                </br>
+        
+                <a href="carpooling.html"><div class="btn btncpl">
+                     Comenzar 
+                </div></a>
+                </br>
+                 </br>
+                 </br>
+                 </br>
+                
+
+                <h3 style="text-align: center; color: white;">Ofrece tus servicios en Carpooling</h3>
+                 </br>
+                 </br>
+                 
+
+                <a href="carpooling-service.html"><div class="btn btncpl">
+                     Ofrecer Servicio 
+                </div></a>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+
+
+
+            </div>
+            
+            
+            
+        </header>
+    
+    
+
+    
+        <div class="footer">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; 2021 Derechos reservados YoVoy.</div>
+                    <a style="color: rgb(184, 37, 11);" href="#!">Privacidad</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 23, 11);" href="#!">Terminos</a>
+                    <span class="mx-1">&middot;</span>
+                    <a style="color: rgb(184, 31, 11);" href="#!">FAQ</a>
+                    <div class="mb-2"> ---- </div>
+                    <a href="#"><img src="img/008-facebook.png" alt="" width="23" alt="Facebook"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/011-instagram.png" alt="" width="23" alt="Instagram"></a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#"><img src="img/001-twitter.png" alt="" width="23" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+ <!-- Iniciar sesion modal-->
+
+ <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient-form p-4">
+                <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Iniciar Sesión</h5>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body border-0 p-4">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                        <small id="emailHelp" class="form-text text-muted">Respetaremos tu privacidad.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                    </div>
+                    <div class="form-group">
+                        <a  href="inscripcion.html">¿No tenes cuenta? Haz click aqui!</a>
+                    </div>
+                </br>
+                    <button type="submit" class="btn btn-outline-primary">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="_framework/blazor.webassembly.js"></script>
+</html>

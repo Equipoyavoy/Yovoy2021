@@ -11,14 +11,15 @@
     
     --gradienteCard: radial-gradient(ellipse at center, rgb(255,48,25) 0%,rgb(207,4,4) 100%);
     --gradientnavs: radial-gradient(ellipse at center, rgb(255,48,25) 0%,rgb(207,4,4) 100%);
+    --gradientcarp: radial-gradient(ellipse at center, rgba(230, 10, 193, 0.616) 0%,rgba(207, 4, 4, 0.651) 100%);
 
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    
     font-family: "Open Sans", sans-serif;
     background: var(--color_blac);  
+    
 }
 
 
@@ -36,6 +37,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 .imagen{
     background: url(https://www.freepik.es/foto-gratis/viajeros-mochilas-posa-cerca-aeropuerto-moderno_15660360.htm);
 }
@@ -88,6 +90,59 @@ h5{
     width: 100%;
     height: auto;
     border-radius: 150px;
+}
+
+.carpoolingIMG{
+    background: url(img/Auto-Mujer.jpg);
+    display: grid;
+    grid-template-columns: 1fr;
+    background-size: cover;
+    height: 100%;
+}
+
+.borcar{
+    display: grid;
+    background: var(--gradientcarp);
+    border-radius: 10px 50px;
+    border: transparent;
+    width: 50%;
+    
+    
+}
+
+.grid-cpl{
+    display: grid;
+
+}
+
+.btncpl{
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    left: 25%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(247, 247, 247, 0.596);
+    text-align: center;
+    transition: all 300ms ease 0ms;
+    width: 50%; 
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.btncpl:hover{
+    background-color: #2a06adab; /* Color de fondo al pasar el cursor */
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    
 }
 
 .estiloboton1{
@@ -334,6 +389,9 @@ h1{
     padding-left: 0;
     
 }
+
+
+
 
 .footer {
     background-color: #000000;

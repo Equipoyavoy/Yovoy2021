@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >YO VOY-Carpooling  </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Grupo de estudio Tecnicatura en programacion 2do Año ITSC">
+    <meta name="description" content="Pagina web dedicada a facilitar los viajes de turistas y viajantes. Te permite encontrar en un mismo lugar hospedaje, compartir un vehiculo para viajar o simplemente obtener informacion turistica de un lugar. Una Web que te hará dar la vuelta al mundo">
+    <meta name="keywords" content="viajes, turismo, aventura, hospedaje, viajecompartido, carpooling, turismo, córdoba, argentina">
+    <link rel="icon" href="img/logo_bisel.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <!-- link fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- link para iconos -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de boostrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Reservá</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark  shadow-sm ">
+            <div class="container px-2 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                    <a class="navbar-brand " href="Index.html">
+                        <img src="img/Logo-Oficial3.png" class=" imgRedonda text-white " id="Logo" width="60" height="60"  alt="Logo">
+                    </a>
+                    <strong class="text-white"> &nbsp YO VOY </strong>
+                </div>
+    
+                <button class="navbar-toggler text-white col-lg-4 col-md-4 col-sm-4 col-xs-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    
+                </button>
+                
+                <div id="navbarResponsive" class="collapse navbar-collapse col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <ul class="navbar-nav   col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            
+                            <!-- boton iniciar sesion-->
+                            
+                            <button class="estiloboton btn btn-secondary rounded-pill px-3 mb-2 mb-lg-0 mr-3" data-bs-toggle="modal" data-bs-target="#login">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Iniciar Sesión</span>
+                                </span>
+                            </button>
+                            &nbsp
+                        
+    
+                            <li >
+                                <a class="estiloboton btn btn-secondary  px-3 rounded-pill small"  href="inscripcion.html" >Registrarse</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+    
+   
+    
+    <div class="anuncios">
+        
+        <!-- Contenedor 1 -->
+        <div class="contenedor" style="grid-column: 1; grid-row: 1;">
+            <div class="anfitrion">
+                <h1>Fernando Heredia</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>12:00 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_1.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 2-->
+        <div class="contenedor" style="grid-column: 2; grid-row: 1;">
+            <div class="anfitrion">
+                <h1>Italo Lobo</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>15:30 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_2.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con calidad.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 3-->
+        <div class="contenedor" style="grid-column: 3; grid-row: 1;">
+            <div class="anfitrion">
+                <h1>Diego Gómez</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>17:00 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_3.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 4-->
+        <div class="contenedor" style="grid-column: 1; grid-row: 2;">
+            <div class="anfitrion">
+                <h1>Soledad Cabrera</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>16:15 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_4.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 5-->
+        <div class="contenedor" style="grid-column: 2; grid-row: 2;">
+            <div class="anfitrion">
+                <h1>Elías Brondo</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>13:00 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_5.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 6-->
+        <div class="contenedor" style="grid-column: 3; grid-row: 2;">
+            <div class="anfitrion">
+                <h1>Sergio Algorry</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>19:00 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_6.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 7-->
+        <div class="contenedor" style="grid-column: 1; grid-row: 3;">
+            <div class="anfitrion">
+                <h1>Rocío Allende</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>23:45 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_7.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates, quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius, quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+        <!-- Contenedor 8-->
+        <div class="contenedor" style="grid-column: 2; grid-row: 3;">
+            <div class="anfitrion">
+                <h1>Joaquín Vitar</h1>
+            </div>
+            <div class="recorrido">
+                <div class="lugar">
+                    <h1>Córdoba</h1>
+                    <img class="icono" src="img/img_origen1.png">
+                </div>
+                <div class="lugar">
+                    <img class="ilustracion" src="img/img_trazo1.png">
+                    <br>
+                </div>
+                <div class="lugar">
+                    <img class="icono" src="img/img_destino1.png">
+                    <h1>Buenos Aires</h1>
+                </div>
+            </div>
+            <div class="item-comun">
+                <h1>16:00 hs</h1>
+                <img class="icono" src="img/img_hora1.png">
+                <h1>20/11/2021</h1>
+                <img class="icono" src="img/img_fecha1.png">
+            </div>
+            <img class="imagen-muestra" src="img/autos/auto_8.png">
+            <div class="item-comun">
+                <h1>4 personas</h1>
+                <img class="icono" src="img/img_persona1.png">
+            </div>
+            <div class="item-comun">
+                <h1>Fiat 600</h1>
+                <img class="icono" src="img/img_auto1.png">
+            </div>
+            <div class="info">
+                <h1>Viaja con nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   A quidem tenetur fugiat. Dolorum distinctio ullam similique voluptates,
+                   quidem, deleniti maiores dolor sequi ipsum fuga amet, quaerat quis
+                   repellendus dignissimos nisi iste veritatis aperiam quo sint nulla? Eius,
+                   quos exercitationem! Quis?</p>
+            </div>
+            <button>
+                <h1>Contactar</h1>
+            </button>
+        </div>
+
+    </div>
+</body>

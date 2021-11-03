@@ -1,0 +1,334 @@
+:root {
+    --col1: rgb(102, 52, 77);
+    --col2: rgb(241, 188, 41);
+    --col3: rgb(237, 237, 237);
+    --col4: rgb(34, 32, 39);
+    --gradienteCard: radial-gradient(ellipse at center, rgb(255,48,25) 0%,rgb(207,4,4) 100%);;
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    padding-bottom: 96px;
+    background-color: var(--col3);
+}
+
+body{
+ 
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.label{
+    height: 30px;
+    margin-top:    20px;
+    margin-bottom: 5px;
+    background: var(--gradienteCard);
+    border-radius: 20px;
+}
+
+.label h1{
+    margin: 0px;
+    padding-left: 16px;
+    padding-top:  4px;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+.hospedaje{
+    padding: 16px;
+    border-style: double;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: rgb(160, 0, 0);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.hospedaje .nombre{
+    margin: 0px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+    color: rgb(34, 32, 39);
+}
+
+.estrella{
+    height: 20px;
+}
+
+.estrella img{
+    width:  20px;
+    height: 20px;
+    margin-right: 4px;
+    float: left;
+}
+
+.destino{
+    display: flex;
+}
+
+.destino .nombre{
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.destino img{
+    width:  20px;
+    height: 20px;
+}
+
+.bien{
+    display: flex;
+    padding-left: 15px;
+    padding-top:  8px;
+}
+
+.bien .nombre{
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.bien img{
+    width:  50px;
+    height: 30px;
+}
+
+.fotos{
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(160px, auto);
+    grid-gap: 8px;
+    grid-template-areas: "a a a b"
+                         "a a a c"
+                         "d d e e";
+}
+
+.fotos .caja{
+    background-color: brown;
+}
+
+.fotos img{
+    object-fit: cover;
+    width:  100%;
+    height: 100%;
+}
+
+.fotos .item1{
+    grid-area: a;
+}
+
+.fotos .item2{
+    grid-area: b;
+}
+
+.fotos .item3{
+    grid-area: c;
+}
+
+.fotos .item4{
+    grid-area: d;
+}
+
+.fotos .item5{
+    grid-area: e;
+}
+
+.viaje{
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(32px, auto);
+    grid-gap: 2px;
+    background-color: rgb(160, 0, 0);
+}
+
+.viaje div{
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.viaje img{
+    display: block;
+    margin: 0 auto;
+    width:  40px;
+    height: 40px;
+}
+
+.info{
+    margin-top: 16px;
+}
+
+.info h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.reserva{
+    width: 50%;
+    margin-top: 16px;
+}
+
+.reserva .negrita{
+    font-weight: bold;
+}
+
+.reserva .grilla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(24px, auto);
+    grid-gap: 0px;
+}
+
+.reserva .boton{
+    width:  45%;
+    height: 48px;
+    margin-top: 24px;
+    padding-top: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px 70px;
+    color: rgb(237, 237, 237);
+    background-color: rgb(180, 0, 0);
+}
+
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #E91E63; /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante:hover {
+    background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+    }
+}
+  /*Para celular*/
+@media(max-width:536px){
+    
+}
+
+.btn-flotante-inicio {
+  font-size: 16px; /* Cambiar el tamaño de la tipografia */
+  text-transform: uppercase; /* Texto en mayusculas */
+  font-weight: bold; /* Fuente en negrita o bold */
+  color: #ffffff; /* Color del texto */
+  border-radius: 5px 70px; /* Borde del boton */
+  letter-spacing: 2px; /* Espacio entre letras */
+  background-color: #fa0c20; /* Color de fondo */
+  padding: 18px 30px; /* Relleno del boton */
+  position: absolute;
+  bottom: 20px;
+  left: 500px;
+  top: 20%;
+  height: 50px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.btn-flotante-inicio1 {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px 70px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #fa0c20; /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: absolute;
+    bottom: 20px;
+    left: 750px;
+    top: 20%;
+    height: 50px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante-inicio:hover {
+    background-color: #2f00ff; /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+.btn-flotante-inicio1:hover {
+    background-color: #2f00ff; /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+@media(max-width:780px){
+    .btn-flotante-inicio1{
+        top: 40%;
+        left: 500px;
+    }
+    
+}
+
+@media(max-width:750px){
+    .btn-flotante-inicio{
+        top: 30%;
+        left: 500px;
+    }
+    
+}
+
+@media(max-width:720px){
+    .btn-flotante-inicio{
+        top: 30%;
+        left: 300px;
+    }
+
+    .btn-flotante-inicio1{
+        top: 40%;
+        left: 300px;
+    }
+    
+}
+
+@media(max-width:480px){
+    .btn-flotante-inicio{
+        top: 100%;
+        left: 60px;
+    }
+
+    .btn-flotante-inicio1{
+        top: 110%;
+        left: 60px;
+    }
+    
+}
